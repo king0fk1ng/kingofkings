@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+
+	<link rel="shortcut icon" href="https://king0fk1ng.github.io/kingofkings/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="https://king0fk1ng.github.io/kingofkings/favicon.ico" type="image/x-icon">
+	<title>KingofKings</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="https://king0fk1ng.github.io/kingofkings/css/slicy.css">
+	<!-- <link rel="stylesheet" href="css/animate.css"> -->
+	<link rel="stylesheet" href="https://king0fk1ng.github.io/kingofkings/css/style.css">
+	<link rel="stylesheet" href="https://king0fk1ng.github.io/kingofkings/css/kz.css">
+	<script src="https://king0fk1ng.github.io/kingofkings/js/web3.min.js"></script>
+</head>
+
+<body>
+	<header class="head">
+		<div class="container">
+			<div class="top-block">
+				<ul class="clearfix nav">
+					<li>
+						<a href="#dx1">About</a>
+					</li>
+					<li>
+						<a href="#dx2">Distribution</a>
+					</li>
+					<li>
+						<a href="#dx3">Features</a>
+					</li>
+					<li>
+						<a href="#dx4">NFT</a>
+					</li>
+				</ul>
+			</div>
+			<div class="top-block logo">
+				<img src="https://king0fk1ng.github.io/kingofkings/img/logo.png" alt="KingofKings">
+			</div>
+		</div>
+	</header>
+	<!-- <div class="banner wow fadeInUp" > -->
+	<div class="banner wow fadeInUp">
+		<img src="https://king0fk1ng.github.io/kingofkings/img/banner.png" alt="KingofKings">
+	</div>
+	<div class="buy">
+		<div class="Blackframe">
+			<div class="Blackframe_conter">
+				<!-- <div class="Blackframe_head">
+					1212121
+				</div> -->
+				<div class="Blackframe_body">
+					<div class="Blackframe_body_fu">
+						<a>price:</a><a>1000000000000KingofKings/1BNB</a>
+					</div>
+					<!-- <div class="Blackframe_body_fu">
+						<a>Amount:</a><a>1</a>
+					</div> -->
+					<div class="Blackframe_body_fu">
+						<a>MAX:</a><a>2BNB</a>
+					</div>
+					<!-- <div class="Blackframe_body_fu">
+						<a>k:</a><a>1</a>
+					</div> -->
+				</div>
+				<div class="Blackframe_lee">
+					<!-- <div class="Blackframe_lee_fu">
+						<a>reward:</a><a>1</a>
+					</div> -->
+					<div class="Blackframe_lee_button">
+						<input id="senBNB" class="Blackframe_lee_input" type="number" value="0.1">
+						<a class="myButton" onclick="buy()">buy</a>
+						<a class="myButton" onclick="Claim()">Claim</a>
+					</div>
+				</div>
+
+			</div>
+			<div class="invite">
+				<a class="invite_a">Invitation Code:</a><a id="copy_a"></a><a class="copy_a"
+					onclick="copyText('copy_a')">copy</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="wow fadeInUp">
+		<div class="first ddsa wow fadeInUp" id="dx1">
+			<div class="container">
+				<div class="left-container">
+					<div class="title">
+						<span class="black block border-top">What is</span>
+						<span class="blue border-bottom">KingofKings</span>
+					</div>
+					<div class="content black">
+						Hold $KingofKings and earn passive income paid in $Shib, Any decision by the community is put to
+						a vote. Each of us has decision-making power, complete transparency and fairness. We also have a
+						consistent reward system and incentive design at the core, and more importantly, it happens in a
+						bottom-up environment. With all this, everyone in the community will feel a sense of belonging
+						and all the resources we allocate will be voted on. With no central authority, no bureaucracy,
+						it remains an autonomous organization. If we are willing to have the courage and attitude to
+						forget and learn, as individuals we can make our own decisions and act for collective intent --
+						and still make money.
+					</div>
+
+				</div>
+
+				<div class="right-container">
+					<img src="https://king0fk1ng.github.io/kingofkings/img/what.png" alt="What is KingofKings">
+				</div>
+			</div>
+		</div>
+
+		<div class="second ddsa wow fadeInUp" id="dx2">
+			<div class="container">
+				<div class="left-container">
+					<img src="https://king0fk1ng.github.io/kingofkings/img/about.png" alt="About KingofKings">
+				</div>
+				<div class="right-container">
+					<div class="title">
+						<span class="white block border-top">About</span>
+						<span class="blue border-bottom">KingofKings</span>
+					</div>
+					<div class="content white">
+						From it's inception, KingofKings has done things differently. <br><br>
+						Starting with a supply of ​2100,000,000,000,000 and LP locked 100% in Pinksale.
+						Simply hold $KingofKings tokens and get rewarded in $shib on every transaction! Our auto-claim
+						feature means your shib Rewards will be automatically sent to your wallet.
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="third bgs ddsa wow fadeInUp" id="dx3">
+			<div class="container">
+				<div class="left-container">
+					<div class="title">
+						<span class="black block border-top">KingofKings</span>
+						<h2 class="blue border-bottom">NFT</h2>
+					</div>
+					<div class="content black">
+						Increase your wallet reputation by holding your KingofKings NFT. <br><br>
+						High reputation score wallets get preferential allocation for lottery and airdrop prizes.
+						<br>Reputation scores will also determine the amount of voting power you have in future
+						KingofKings DAO voting decisions.
+					</div>
+				</div>
+				<div class="right-container">
+					<img src="https://king0fk1ng.github.io/kingofkings/img/nft.png" alt="What is KingofKings">
+				</div>
+			</div>
+		</div>
+
+		<div class="fourth ddsa wow fadeInUp" id="dx4">
+			<div class="container">
+				<div class="left-container">
+					<div class="title">
+						<span class="black block border-top">KingofKings</span>
+						<h2 class="blue border-bottom">NFT Preview</h2>
+					</div>
+					<div class="content black">
+						Mint a KingofKings NFT node with as little as 1,000,000,000
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="fifth ddsa wow fadeInUp" id="dx5">
+			<img src="https://king0fk1ng.github.io/kingofkings/img/roadmap.png" alt="roadmap">
+		</div>
+
+		<div class="brand ddsa wow fadeInUp">
+			<div class="container">
+				<div class="title">
+					<h2 class="black">COOPERATION</h2>
+					<h2 class="blue border">brand</h2>
+				</div>
+				<div class="all-partners">
+					<img src="https://king0fk1ng.github.io/kingofkings/img/cb33.png">
+				</div>
+			</div>
+		</div>
+
+		<div class="join ddsa wow fadeInUp">
+			<div class="container">
+				<div class="left">
+					<h2>JOIN THE<br>COMMUNITY</h2>
+					<p>
+						Have any questions about the project?<br>
+						Join the Telegram for more<br>
+						information.
+					</p>
+				</div>
+				<div class="right">
+					<img src="https://king0fk1ng.github.io/kingofkings/img/kok.png" alt="kok">
+				</div>
+			</div>
+			<p class="copyright">Copyright © 2022 KingofKings All rights reserved</p>
+		</div>
+	</div>
+	<script src="https://king0fk1ng.github.io/kingofkings/js/jquery-3.3.1.min.js"></script>
+	<script src="https://king0fk1ng.github.io/kingofkings/js/wow.min.js"></script>
+	
+	
+	
+	<script>
+		$('header li a').click(function () {
+			$('html,body').animate({
+				scrollTop: $($(this).attr('href')).offset().top - 110
+			}, 300);
+		});
+		fxtop();
+		function fxtop() {
+			$(window).bind("scroll", function (event) {
+				var list = $('.ddsa');
+				var tt = $(window).scrollTop();
+				if (tt > 800) {
+					$(".fixedbar").fadeIn();
+				} else {
+					$(".fixedbar").fadeOut();
+				}
+				var aa = $('.fixedbar li');
+				list.each(function (index) {
+					if ($(this).offset().top <= tt && tt < $(this).offset().top + $(this).height()) {
+						var id = $(this).attr('id');
+						aa.each(function (i) {
+							var a = $(this).find('a').attr('href');
+							if ('#' + id == a) {
+								$(this).addClass('active');
+							} else {
+								$(this).removeClass('active');
+							}
+						});
+						return false
+					}
+				})
+			});
+		}
+		new WOW().init();
+
+
+		function browser() {
+			var mobile = (/mmp|symbian|smartphone|midp|wap|phone|xoom|iphone|ipad|ipod|android|blackberry|mini|windowssce|palm/i.test(navigator.userAgent.toLowerCase()));
+			if (mobile) {
+				$('html').css({ "width": "1920px", "overflow-x": "hididen" });
+				// $('body').css({"width":"1920px","margin-left":"-230px"});
+				$('body').css({ "width": "1920px" });
+				$('header .container').css("margin-left", "320px");
+				$('.circle-and img').css("top", "-10%");
+				$('.fifth img').css({ "width": "1600px", "margin-left": "100px" });
+				$(".all-partners img").css("width", "700px");
+
+			}
+		}
+		browser();
+	</script>
+
+
+
+	<script>
+		var web3
+		var msg
+		var tempmsg
+		var web3Provider
+		{
+			if (window.ethereum) {
+				web3Provider = window.ethereum;
+				try {
+					window.ethereum.enable()
+				} catch (error) {
+					console.error("User denied account access")
+				}
+			}
+			web3 = new Web3(web3Provider);
+			//$set('gasp2', web3.utils.fromWei(gas, 'gwei'))
+			console.log(web3.currentProvider.selectedAddress);
+
+			setInterval(async () => {
+				msg = web3.currentProvider.selectedAddress
+
+			}, 3000);
+
+		}
+
+
+
+
+
+		async function buy() {
+
+			let senBNB = web3.utils.toWei($get("senBNB"), "ether")
+			let gas = await getMethods(abi, token).userDeposit(getref()).estimateGas({
+				from: msg,
+				value: senBNB,
+				gasPrice: web3.utils.toWei("5", "gwei")
+			})
+
+			await getMethods(abi, token).userDeposit(getref()).send({
+				from: msg,
+				value: senBNB,
+				gas: gas,
+				gasPrice: web3.utils.toWei("5", "gwei")
+			})
+
+		}
+
+		async function Claim() {
+			let gas = await getMethods(abi, token).Claim().estimateGas({
+				from: msg,
+				gasPrice: web3.utils.toWei("5", "gwei")
+			})
+			await getMethods(abi, token).Claim().send({
+				from: msg,
+
+				gas: gas,
+				gasPrice: web3.utils.toWei("5", "gwei")
+			})
+		}
+	</script>
+
+
+
+	<script>
+
+
+		function getref() {
+			let ref = window.location.href.match(/0x(.{40})/ig)
+			if (ref == null || ref == undefined) {
+				return '0x321DEC552527dDCC17E5bFb1C055d2C15A51C589'
+			}
+
+			return ref[0]
+		}
+		function $set(p1, p2) {
+			let t = document.getElementById(p1);
+			t.value = p2
+		}
+		function $get(p1) {
+			let t = document.getElementById(p1);
+			return t.value
+		}
+
+		function getMethods(p1, p2) {
+			if (p2 == undefined) {
+				return new web3.eth.Contract(p1.abi, p1.address).methods;
+			} else {
+				return new web3.eth.Contract(p1, p2).methods;
+			}
+		}
+
+	</script>
+
+
+
+
+	<script>
+		function copyText(str_file) {
+			const btn = document.querySelector('.' + str_file);
+			var copy_val = document.getElementById(str_file)
+			var copy_file = copy_val.innerHTML
+			const input = document.createElement('input');
+			document.body.appendChild(input);
+			input.setAttribute('value', copy_file);
+			input.select();
+			if (document.execCommand('copy')) {
+				document.execCommand('copy');
+				console.log("success", "success");
+			}
+			document.body.removeChild(input);
+		}
+		console.log(window.location.href.indexOf("?") != -1);
+		setInterval(() => {
+			if (msg != undefined) {
+				if (tempmsg != msg) {
+					tempmsg = msg
+					if (window.location.href.indexOf("?") != -1) {
+						let local = window.location.href.indexOf("?")
+						console.log(local);
+						let ly = window.location.href.substring(0, local) + "?ref=" + msg
+						document.getElementById("copy_a").innerText = ly
+					} else {
+						let ly = window.location.href + "?ref=" + msg
+						document.getElementById("copy_a").innerText = ly
+					}
+				}
+			}
+		}, 500);
+	</script>
+
+
+	<script>
+		const token = '0xBBFF532879709094d3168b338fc62d8Aeb57aC7D'
+		const abi = [
+			{
+				"inputs": [],
+				"name": "Claim",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "LPtoken",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "v",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data1",
+						"type": "bytes"
+					}
+				],
+				"name": "MCall",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "a",
+						"type": "address"
+					}
+				],
+				"name": "addOrDelAdmin",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "address_all",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "exit",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_start",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_count",
+						"type": "uint256"
+					}
+				],
+				"name": "getAddress",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "max",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "refs",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "senders",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "token",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "token1b",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "ref_",
+						"type": "address"
+					}
+				],
+				"name": "userDeposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		]
+
+
+	</script>
+</body>
+
+</html>
