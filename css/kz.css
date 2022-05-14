@@ -1,0 +1,140 @@
+.buy {50px
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.Blackframe {
+    font-size: 50px;
+    width: 100%;
+    background-image: url("../img/boo111.png");
+    background-size: 100% 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.Blackframe_conter {
+   width: 80%;
+    padding: 20px;
+    background-color: #7f989038;
+    border-radius: 50px;
+    
+}
+
+.Blackframe_head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Blackframe_body {
+    margin-bottom: 50px;
+
+}
+
+.Blackframe_body_fu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Blackframe_body_fu a {
+    color: #fff;
+}
+
+.Blackframe_lee_fu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Blackframe_lee_fu a {
+    color: #fff;
+}
+
+.myButton {
+    box-shadow: 0px 10px 14px -7px #ffffff;
+    background-color: #ffffff;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    color: #131722;
+    font-family: Arial;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 13px 32px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.myButton:hover {
+    background-color: #e3e3e3;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+    background-color: #ffffff;
+}
+
+.Blackframe_lee_button {
+    text-align: center;
+}
+
+.invite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    /* background-image: url("../img/boo1.png"); */
+    /* background-color: #131722; */
+    font-size: 28px;
+    padding: 20px;
+}
+
+.invite_a {
+    color: #fff;
+    font-size: 50px;
+}
+
+.copy_a {
+    background-color: #ffffff;
+    border-radius: 3px;
+    display: inline-block;
+    cursor: pointer;
+    color: #131722;
+    font-family: Arial;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 13px 32px;
+    text-decoration: none;
+}
+
+.copy_a:hover {
+    background-color: #e3e3e3;
+}
+
+.copy_a:active {
+    position: relative;
+    top: 1px;
+    background-color: #ffffff;
+}
+
+#copy_a {
+    margin: 0 20px;
+}
+
+.Blackframe_lee_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Blackframe_lee_input {
+    width: 400px;
+    height: 80px;
+    font-size: 50px;
+    border-radius: 5px;
+    margin-right: 50px;
+}
