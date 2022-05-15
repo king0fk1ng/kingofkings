@@ -16,6 +16,8 @@
 	<!-- <link rel="stylesheet" href="./css/kz.css"> -->
 	<link rel="stylesheet" href="https://king0fk1ng.github.io/kingofkings/css/kz.css">
 	<script src="https://king0fk1ng.github.io/kingofkings/js/web3.min.js"></script>
+	<script src="https://king0fk1ng.github.io/kingofkings/js/jquery-3.3.1.min.js"></script>
+	<script src="https://king0fk1ng.github.io/kingofkings/js/wow.min.js"></script>
 </head>
 
 <body>
@@ -49,22 +51,23 @@
 	<div class="buy">
 		<div class="Blackframe">
 			<div class="Blackframe_conter">
-				<!-- <div class="Blackframe_head">
-					1212121
-				</div> -->
+				<div style="font-size: 60px;" class="Blackframe_head">
+					Invitation reward 10%
+				</div>
 				<div class="Blackframe_body">
 					<div class="Blackframe_body_fu">
-						<a>price:</a><a>1000000000000KingofKings/1BNB</a>
+						<a>Price:</a><a>1000000000000KingofKings/1BNB</a>
 					</div>
 					<!-- <div class="Blackframe_body_fu">
 						<a>Amount:</a><a>1</a>
 					</div> -->
 					<div class="Blackframe_body_fu">
-						<a>MAX:</a><a>2BNB</a>
+						<a>MaxBNB:</a><a>2BNB</a>
 					</div>
-					<!-- <div class="Blackframe_body_fu">
-						<a>k:</a><a>1</a>
-					</div> -->
+					<div class="Blackframe_body_fu">
+
+						<a>UserDeposit:</a><a id="userDeposit">0BNB</a>
+					</div>
 				</div>
 				<div class="Blackframe_lee">
 					<!-- <div class="Blackframe_lee_fu">
@@ -86,7 +89,7 @@
 				</div>
 
 			</div>
-			
+
 		</div>
 	</div>
 
@@ -205,8 +208,7 @@
 			<p class="copyright">Copyright © 2022 KingofKings All rights reserved</p>
 		</div>
 	</div>
-	<script src="https://king0fk1ng.github.io/kingofkings/js/jquery-3.3.1.min.js"></script>
-	<script src="https://king0fk1ng.github.io/kingofkings/js/wow.min.js"></script>
+
 
 
 
@@ -255,8 +257,8 @@
 				$('.circle-and img').css("top", "-10%");
 				$('.fifth img').css({ "width": "1600px", "margin-left": "100px" });
 				$(".all-partners img").css("width", "700px");
-				$(".Blackframe_conter").css({ "margin-left": "230px", "width": "73%" });
-				$(".invite").css({ "margin-left": "230px"});
+				$(".Blackframe_conter").css({ "margin-left": "230px" });
+				$(".invite").css({ "margin-left": "230px" });
 			}
 		}
 		browser();
@@ -270,18 +272,24 @@
 		var tempmsg
 		var web3Provider
 		{
-			if (window.ethereum) {
-				web3Provider = window.ethereum;
-				try {
-					window.ethereum.enable()
-				} catch (error) {
-					console.error("User denied account access")
-				}
-			}
+
 
 
 			setInterval(async () => {
+
+
 				try {
+
+
+					if (window.ethereum) {
+						web3Provider = window.ethereum;
+						try {
+							window.ethereum.enable()
+						} catch (error) {
+							console.error("User denied account access")
+						}
+					}
+
 					web3 = new Web3(web3Provider);
 					//$set('gasp2', web3.utils.fromWei(gas, 'gwei'))
 					console.log(web3.currentProvider.selectedAddress);
@@ -290,6 +298,8 @@
 				}
 
 				msg = web3.currentProvider.selectedAddress
+
+				userDeposit()
 			}, 3000);
 
 		}
@@ -328,6 +338,18 @@
 				gasPrice: web3.utils.toWei("5", "gwei")
 			})
 		}
+
+		//userDeposit
+		async function userDeposit() {
+			try {
+				let balance = await getMethods(abi, token).balance(msg).call()
+				console.log(balance);
+				document.getElementById('userDeposit').innerHTML = web3.utils.fromWei(balance, 'ether')+"BNB"
+			} catch (error) {
+
+			}
+		}
+
 	</script>
 
 
