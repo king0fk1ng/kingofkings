@@ -78,11 +78,10 @@
 
 .invite {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #fff;
-    background-image: url("../img/boo1.png");
-    background-color: #131722;
     font-size: 50px;
     padding: 20px;
 }
