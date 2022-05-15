@@ -1,27 +1,20 @@
 .buy {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #fff;
 }
 
 .Blackframe {
-    font-size: 50px;
+    font-size: 28px;
     width: 100%;
     background-image: url("../img/boo111.png");
     background-size: 100% 100%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
+   
 }
 
 .Blackframe_conter {
-    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
     padding: 20px;
-    background-color: #7f989038;
-    border-radius: 50px;
-    
 }
 
 .Blackframe_head {
@@ -61,7 +54,7 @@
     cursor: pointer;
     color: #131722;
     font-family: Arial;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
     padding: 13px 32px;
     text-decoration: none;
@@ -95,7 +88,6 @@
 
 .invite_a {
     color: #fff;
-    font-size: 50px;
 }
 
 .copy_a {
@@ -105,9 +97,9 @@
     cursor: pointer;
     color: #131722;
     font-family: Arial;
-    font-size: 40px;
+    font-size: 15px;
     font-weight: bold;
-    padding: 13px 32px;
+    padding: 8px 8px;
     text-decoration: none;
 }
 
@@ -132,9 +124,8 @@
 }
 
 .Blackframe_lee_input {
-    width: 400px;
-    height: 80px;
-    font-size: 50px;
+    height: 45px;
+    font-size: 28px;
     border-radius: 5px;
     margin-right: 50px;
 }
