@@ -7,7 +7,7 @@
     width: 100%;
     background-image: url("../img/boo111.png");
     background-size: 100% 100%;
-   
+
 }
 
 .Blackframe_conter {
@@ -80,11 +80,12 @@
     align-items: center;
     justify-content: center;
     color: #fff;
-    /* background-image: url("../img/boo1.png"); */
-    /* background-color: #131722; */
+    background-image: url("../img/boo1.png");
+    background-color: #131722;
     font-size: 28px;
     padding: 20px;
 }
+
 
 .invite_a {
     color: #fff;
