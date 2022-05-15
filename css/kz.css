@@ -1,4 +1,4 @@
-.buy {50px
+.buy {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +17,7 @@
 }
 
 .Blackframe_conter {
-   width: 80%;
+    width: 100%;
     padding: 20px;
     background-color: #7f989038;
     border-radius: 50px;

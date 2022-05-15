@@ -232,7 +232,7 @@ header{
 }
 .circle-and img{
 	position: absolute;
-	width:1920px;
+	/* width:1920px; */
 	height:1080px;
 	left:50%;
 	margin-left:-960px;
