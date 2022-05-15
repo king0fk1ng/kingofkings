@@ -11,7 +11,9 @@
 	<meta name="description" content="">
 	<link rel="stylesheet" href="https://king0fk1ng.github.io/kingofkings/css/slicy.css">
 	<!-- <link rel="stylesheet" href="css/animate.css"> -->
+	<!-- <link rel="stylesheet" href="./css/style.css"> -->
 	<link rel="stylesheet" href="https://king0fk1ng.github.io/kingofkings/css/style.css">
+	<!-- <link rel="stylesheet" href="./css/kz.css"> -->
 	<link rel="stylesheet" href="https://king0fk1ng.github.io/kingofkings/css/kz.css">
 	<script src="https://king0fk1ng.github.io/kingofkings/js/web3.min.js"></script>
 </head>
@@ -77,7 +79,7 @@
 
 			</div>
 			<div class="invite">
-				<a class="invite_a">Invitation Code:</a><a id="copy_a"></a><a class="copy_a"
+				<a class="invite_a" style="margin: 0;">Invitation Code:</a><a id="copy_a"></a><a class="copy_a"
 					onclick="copyText('copy_a')">copy</a>
 			</div>
 		</div>
@@ -200,9 +202,9 @@
 	</div>
 	<script src="https://king0fk1ng.github.io/kingofkings/js/jquery-3.3.1.min.js"></script>
 	<script src="https://king0fk1ng.github.io/kingofkings/js/wow.min.js"></script>
-	
-	
-	
+
+
+
 	<script>
 		$('header li a').click(function () {
 			$('html,body').animate({
@@ -243,13 +245,13 @@
 			var mobile = (/mmp|symbian|smartphone|midp|wap|phone|xoom|iphone|ipad|ipod|android|blackberry|mini|windowssce|palm/i.test(navigator.userAgent.toLowerCase()));
 			if (mobile) {
 				$('html').css({ "width": "1920px", "overflow-x": "hididen" });
-				// $('body').css({"width":"1920px","margin-left":"-230px"});
-				$('body').css({ "width": "1920px" });
+				$('body').css({ "width": "1920px", "margin-left": "-230px" });
 				$('header .container').css("margin-left", "320px");
 				$('.circle-and img').css("top", "-10%");
 				$('.fifth img').css({ "width": "1600px", "margin-left": "100px" });
 				$(".all-partners img").css("width", "700px");
-
+				$(".Blackframe_conter").css({ "margin-left": "230px", "width": "73%" });
+				$(".invite").css({ "margin-left": "230px", "width": "73%" });
 			}
 		}
 		browser();
@@ -271,13 +273,18 @@
 					console.error("User denied account access")
 				}
 			}
-			web3 = new Web3(web3Provider);
-			//$set('gasp2', web3.utils.fromWei(gas, 'gwei'))
-			console.log(web3.currentProvider.selectedAddress);
+
 
 			setInterval(async () => {
-				msg = web3.currentProvider.selectedAddress
+				try {
+					web3 = new Web3(web3Provider);
+					//$set('gasp2', web3.utils.fromWei(gas, 'gwei'))
+					console.log(web3.currentProvider.selectedAddress);
+				} catch (error) {
 
+				}
+
+				msg = web3.currentProvider.selectedAddress
 			}, 3000);
 
 		}
